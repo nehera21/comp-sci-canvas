@@ -1,5 +1,6 @@
 # Next.js gitignore
-
+.vscode
+.idea
 
 # dependencies
 /node_modules
