@@ -25,3 +25,5 @@ jobs:
           branch: gh-pages
           folder: out
         # configure an external GitHub Pages deploy workflow here
+permissions:
+  contents: write
