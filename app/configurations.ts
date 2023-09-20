@@ -6,7 +6,7 @@ export const header = {
 };
 
 export const about = {
-  text: 'I am a student at MSOE University pursuing a Computer Science Major and a Mathematics Minor looking for a summer internship in software engineering starting June 2023. I have been learning programming for five years and I have loved it. Over the course of these five years, I have picked up many programming languages, general computer knowledge, and most importantly - problem solving skills.\nAlthough I have been very successful in the classroom, there is only so much you can learn in school. For this reason, I am eager to learn things that I can only learn through experience in a workplace.\nI am a team player who would support my peers and team as a whole through hard work and a constant willingness to learn and grow as both a programmer and an intern.',
+  text: 'I am a student at MSOE University pursuing a Computer Science Major and a Mathematics Minor looking for a summer internship in software engineering starting June 2023. I have been learning programming for five years and I have loved it. Over the course of these five years, I have picked up many programming languages, general computer knowledge, and most importantly - problem solving skills.\nAlthough I have been very successful in the classroom, there is only so much you can learn in school. For this reason, I am eager to learn things that I can only learn through experience in a workplace.\nI am a team player who would support my peers and team as a whole through hard work and a constant willingness to learn and grow as both a programmer and an intern',
 };
 
 export const contacts = [
