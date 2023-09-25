@@ -8,11 +8,11 @@ export type AboutProps = {
 export default function About(props: AboutProps) {
   const { text } = props;
   return (
-    <Box id="about">
-      <Heading size="2xl" pl="3" pb="8" pt="5">
+    <Box id="about" pl="3" pt="4">
+      <Heading size="2xl" pl="7" pb="8" pt="5">
         About
       </Heading>
-      <Text fontSize="18" fontFamily="mono" mt="45px" mr="30px" ml="28px">
+      <Text fontSize="18" fontFamily="mono" mt="20px" mr="30px" ml="28px">
         {text}
       </Text>
     </Box>
