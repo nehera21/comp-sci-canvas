@@ -1,12 +1,11 @@
 export const header = {
   title: 'Alex Neher',
   subtitle: 'Software Engineering and Data Science',
-  intro:
-    'I am a Computer Science student at the Milwaukee School of Engineering',
+  intro: 'Computer Science Student at the Milwaukee School of Engineering',
 };
 
 export const about = {
-  text: 'I am a student at MSOE University pursuing a Computer Science Major and a Mathematics Minor looking for a summer internship in software engineering starting June 2023. I have been learning programming for five years and I have loved it. Over the course of these five years, I have picked up many programming languages, general computer knowledge, and most importantly - problem solving skills.\nAlthough I have been very successful in the classroom, there is only so much you can learn in school. For this reason, I am eager to learn things that I can only learn through experience in a workplace.\nI am a team player who would support my peers and team as a whole through hard work and a constant willingness to learn and grow as both a programmer and an intern',
+  text: 'Hello! My name is Alex Neher, a passionate and hard-working computer science student on a journey to explore the rapidly evolving world of technology and programming.\nAs a computer science student, I have developed a strong foundation in languages such as Python, Java, and C/C++, as well a web technologies like JavaScript, Node.js, and ReactJS. My coursework has equipped me with knowledge in algorithms, data structures, and software engineering practices. I am also enthusiastic about exploring emerging technologies like artificial intelligence, machine learning, and data science.\nI am currently looking for an internship in software engineering or data science.',
 };
 
 export const contacts = [
@@ -29,7 +28,7 @@ export const projects = [
     ],
   },
   {
-    title: 'Cooking Website',
+    title: 'Styled Cooking Website',
     description:
       'A static page cooking website using HTML and CSS with recipes, an about page, and an information page',
     link: '',
@@ -42,7 +41,7 @@ export const projects = [
   {
     title: 'Portfolio Website',
     description: 'The site you are on right now.',
-    link: '',
+    link: 'https://github.com/nehera21/comp-sci-canvas',
     image: '',
     tags: [
       { name: 'HTML', link: '', isLink: false },
@@ -59,7 +58,7 @@ export const projects = [
   {
     title: 'Word Search Puzzle Generator',
     description:
-      'A program that takes in a list of words and generates a word search puzzle with the words hidden in the puzzle.',
+      'A program that takes in a list of words and randomly generates a word search puzzle with the words hidden in the puzzle.',
     link: '',
     image: '',
     tags: [{ name: 'C++', link: 'https://cplusplus.com/', isLink: true }],
