@@ -10,14 +10,14 @@ export type HeaderProps = {
 export default function Header(props: HeaderProps) {
   const { title, subtitle, intro } = props;
   return (
-    <Stack h="40vh" w="40vw" pl="6" textAlign={'left'}>
-      <Heading pt="10" pb="16px" fontFamily="mono" size={'2xl'}>
+    <Stack h="30vh" w="40vw" pl="6" textAlign={'left'}>
+      <Heading pt="10px" fontFamily="mono" size={'2xl'}>
         {title}
       </Heading>
-      <Heading pb="15px" fontFamily="mono" size="md">
+      <Heading fontFamily="mono" size="sm">
         {subtitle}
       </Heading>
-      <Heading pb="15px" fontFamily="mono" size="md">
+      <Heading pt="20px" fontFamily="mono" size="md">
         {intro}
       </Heading>
     </Stack>

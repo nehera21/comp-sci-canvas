@@ -14,12 +14,11 @@ export default function Skill(props: SkillProps) {
     <AnimatedBox>
       <Center
         as={motion.div}
-        bgColor="#333333"
+        bgColor="transparent"
         boxSize="150px"
         borderColor={color}
         border="1px"
-        whileHover={{ scale: 1.03, boxShadow: '5px 5px 10px ' + color }}
-        whileTap={{ scale: 0.98 }}
+        whileHover={{ boxShadow: '0 0 40px ' + color }}
       >
         <Image src={image} alt={name} boxSize="130px" objectFit="contain" />
       </Center>

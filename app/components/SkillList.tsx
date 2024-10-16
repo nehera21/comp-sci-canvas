@@ -1,20 +1,17 @@
 import React from 'react';
 import { Box, Heading, Grid, GridItem } from '@chakra-ui/react';
-import Skill, { SkillProps } from './Skill';
+import Skill from './Skill';
 
-export type SkillListProps = {
-  skills: SkillProps[];
-};
-export default function SkillList(props: SkillListProps) {
+export default function SkillList(props: any) {
   return (
-    <Box pt="30px" id="skills">
-      <Heading size="2xl" pb="6" pt="15" pl="9">
+    <Box pt="30px">
+      <Heading size="2xl" pb="6" pt="15" pl="9" id="skills">
         Skills
       </Heading>
       <Grid templateColumns="repeat(3, 1fr)" gap={5} pt="3" pl="9">
-        {props.skills.map((skill: SkillProps) => {
+        {props.skills.map((skill: any) => {
           return (
-            <GridItem key={skill.name}>
+            <GridItem>
               <Skill {...skill} />
             </GridItem>
           );

@@ -1,15 +1,12 @@
 import React from 'react';
-import MenuItem, { MenuProps as ItemProps } from './MenuItem';
-import { Box } from '@chakra-ui/react';
+import MenuItem from './MenuItem';
+import { Box, Heading } from '@chakra-ui/react';
 
-type MenuProps = {
-  menuItems: ItemProps[];
-};
-export default function Menu(props: MenuProps) {
+export default function Menu(props: any) {
   return (
-    <Box pl="6" pt="10" width="600px" justifyContent="right">
-      {props.menuItems.map((item: ItemProps) => (
-        <MenuItem key={item.name} {...item} />
+    <Box pl="6" width="600px" justifyContent="right">
+      {props.menuItems.map((item: any) => (
+        <MenuItem {...item} />
       ))}
     </Box>
   );

@@ -5,7 +5,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
 export const colors = {
   brand: {
-    bg: '#225E68',
+    bg: '#30064f',
     text: '#E3EAEB',
     emphasis: '#366570',
     accent: '#F6B75D',

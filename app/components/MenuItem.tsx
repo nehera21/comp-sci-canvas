@@ -17,15 +17,15 @@ export default function MenuItem(props: MenuProps) {
         as={motion.button}
         onClick={() => router.push(`#${jumpID}`)}
         fontFamily="mono"
-        bgColor="#225E68"
-        color="#F6B75D"
+        bgColor="transparent"
+        color="brand.accent"
         border="1px"
-        borderColor="#F6B75D"
+        borderColor="brand.accent"
         width="100px"
         whileHover={{
-          scale: 1.1,
           backgroundColor: '#F6B75D',
-          color: '#225E68',
+          color: '#30064f',
+          width: '200px',
         }}
         whileTap={{ scale: 0.95 }}
       >

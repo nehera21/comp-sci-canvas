@@ -21,9 +21,14 @@ export default function Tag(props: TagProps) {
       whileTap={{ backgroundColor: '#FFFFE0', scale: 0.98 }}
     >
       {isLink && (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <Text color="#333333">{name}</Text>
-        </a>
+        <Text
+          as="span"
+          onClick={() => (window.location.href = link)}
+          cursor="pointer"
+          color="#333333"
+        >
+          {name}
+        </Text>
       )}
       {!isLink && <Text color="#333333">{name}</Text>}
     </AnimatedBox>
