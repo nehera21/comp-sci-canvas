@@ -1,5 +1,3 @@
-import { link } from 'fs';
-
 export const background = './images/wave.png';
 
 export const header = {
@@ -21,6 +19,7 @@ export const contacts = [
 
 export const projects = [
   {
+    id: '1',
     title: 'Homologus Point Transformer',
     description:
       'A program the takes in dataset of two modalities of medical images (made for histology and MRI images) and uses a convolutional neural network to register the one modality to the other.',
@@ -34,6 +33,7 @@ export const projects = [
     ],
   },
   {
+    id: '2',
     title: 'Hierflow',
     description:
       'A program that uses a large language model to create a hierarchy of a particular topic, as well as classify an item within an existing hierarchy. The pipeline utilizes embeddings, RAG, and prompt engineering.',
@@ -46,6 +46,7 @@ export const projects = [
     ],
   },
   {
+    id: '3',
     title: 'Japanese Character Recognition',
     description:
       'A program that takes in an image of a Japanese character and uses a neural network to predict what character it is. The model was deployed on an Android app where a user could draw the character and see the model prediction.',
@@ -58,6 +59,7 @@ export const projects = [
     ],
   },
   {
+    id: '4',
     title: 'Memory Montor Web App',
     description:
       'An internal app at Cognex that allows a worker to monitor the heap memory usage of a camera overtime using a web interface and network requests using socket calls.',
@@ -77,6 +79,7 @@ export const projects = [
 
 export const experience = [
   {
+    id: '1',
     title: 'Software Engineering Intern - Cognex Corporation',
     description:
       'At Cognex, I worked on a team that developed software for the In-Sight camera line. I worked on various parts of our tech stack, including the camera firmware and the .NET apps which users interact with to perform operations.',
@@ -99,6 +102,7 @@ export const experience = [
 
 export const research = [
   {
+    id: '1',
     title: 'Mind Over (Gray) Matter',
     description:
       'A program the takes in dataset of two modalities of medical images (made for histology and MRI images) and uses a convolutional neural network to register the one modality to the other.',

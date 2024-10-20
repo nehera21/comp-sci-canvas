@@ -4,11 +4,29 @@ import { Box, Heading, Text, Flex, Link } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Tag from './Tag';
 import { AnimatedBox } from './AnimatedBox';
-import brand from '../Providers';
 
-export default function ListItem(props: any) {
-  const { title, description, link, image, tags } = props;
+type Tag = {
+  name: string;
+  link: string;
+  isLink: boolean;
+};
 
+type Project = {
+  id: string;
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+  tags: Tag[];
+};
+
+export default function ListItem({
+  title,
+  description,
+  link,
+  image,
+  tags,
+}: Project) {
   return (
     <Box pl="3" pb="5">
       <AnimatedBox
@@ -56,8 +74,8 @@ export default function ListItem(props: any) {
                   {description}
                 </Text>
                 <Flex>
-                  {tags.map((tags: any) => (
-                    <Tag {...tags} key={tags.name} />
+                  {tags.map((tag: Tag) => (
+                    <Tag {...tag} key={tag.name} />
                   ))}
                 </Flex>
               </Flex>

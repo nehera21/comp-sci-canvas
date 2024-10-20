@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import ItemList from './components/ItemList';
 import Header from './components/Header';

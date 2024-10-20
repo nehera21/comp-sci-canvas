@@ -3,12 +3,11 @@ import { Box, Button } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 
-export type MenuProps = {
+export type MenuItemProps = {
   jumpID: string;
   name: string;
 };
-export default function MenuItem(props: MenuProps) {
-  const { jumpID, name } = props;
+export default function MenuItem({ jumpID, name }: MenuItemProps) {
   const router = useRouter();
   console.log(jumpID);
   return (

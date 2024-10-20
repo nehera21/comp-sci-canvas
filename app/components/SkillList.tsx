@@ -2,20 +2,29 @@ import React from 'react';
 import { Box, Heading, Grid, GridItem } from '@chakra-ui/react';
 import Skill from './Skill';
 
-export default function SkillList(props: any) {
+type SkillType = {
+  image: string;
+  name: string;
+  color: string;
+};
+
+type SkillListProps = {
+  skills: SkillType[];
+  id: string;
+};
+
+export default function SkillList({ skills, id }: SkillListProps) {
   return (
     <Box pt="30px">
-      <Heading size="2xl" pb="6" pt="15" pl="9" id="skills">
+      <Heading size="2xl" pb="6" pt="15" pl="9" id={id}>
         Skills
       </Heading>
       <Grid templateColumns="repeat(3, 1fr)" gap={5} pt="3" pl="9">
-        {props.skills.map((skill: any) => {
-          return (
-            <GridItem>
-              <Skill {...skill} />
-            </GridItem>
-          );
-        })}
+        {skills.map((skill) => (
+          <GridItem key={skill.name}>
+            <Skill {...skill} />
+          </GridItem>
+        ))}
       </Grid>
     </Box>
   );
