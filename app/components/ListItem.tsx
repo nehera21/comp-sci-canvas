@@ -39,52 +39,44 @@ export default function ListItem({
         border="1px"
         borderColor="brand.accent"
         borderRadius="10"
-        whileHover={{ scale: 1.02, boxShadow: '5px 5px 10px #333333' }}
-        whileTap={{ scale: 0.98 }}
+        whileHover={{ boxShadow: '5px 5px 10px #333333' }}
       >
-        <Link
-          href={link}
-          style={{ textDecoration: 'none' }}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Flex direction="row">
-            <Box width="70%">
-              <Flex
-                direction="column"
-                justifyContent="space-between"
-                height="100%"
+        <Flex direction="row">
+          <Box width="70%">
+            <Flex
+              direction="column"
+              justifyContent="space-between"
+              height="100%"
+            >
+              <Heading
+                fontSize="30"
+                pb="7px"
+                pl="5px"
+                color="white"
+                fontWeight="bolder"
               >
-                <Heading
-                  fontSize="30"
-                  pb="7px"
-                  pl="5px"
-                  color="white"
-                  fontWeight="bolder"
-                >
-                  {title}
-                </Heading>
-                <Text
-                  pb="5px"
-                  pl="5px"
-                  fontSize="18"
-                  color="white"
-                  fontWeight="bold"
-                >
-                  {description}
-                </Text>
-                <Flex>
-                  {tags.map((tag: Tag) => (
-                    <Tag {...tag} key={tag.name} />
-                  ))}
-                </Flex>
+                {title}
+              </Heading>
+              <Text
+                pb="5px"
+                pl="5px"
+                fontSize="18"
+                color="white"
+                fontWeight="bold"
+              >
+                {description}
+              </Text>
+              <Flex>
+                {tags.map((tag: Tag) => (
+                  <Tag {...tag} key={tag.name} />
+                ))}
               </Flex>
-            </Box>
-            <Box width="30%">
-              <img src={image} alt={title} />
-            </Box>
-          </Flex>
-        </Link>
+            </Flex>
+          </Box>
+          <Box width="30%">
+            <img src={image} alt={title} />
+          </Box>
+        </Flex>
       </AnimatedBox>
     </Box>
   );
