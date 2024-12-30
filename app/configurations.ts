@@ -203,7 +203,7 @@ export const skills = [
     color: '#4D77CF',
   },
   {
-    image: './images/torch-logo.png',
+    image: './images/pytorch-logo.png',
     name: 'PyTorch',
     color: '#FF4F00',
   },
