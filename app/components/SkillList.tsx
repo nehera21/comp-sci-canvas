@@ -1,31 +1,51 @@
 import React from 'react';
-import { Box, Heading, Grid, GridItem } from '@chakra-ui/react';
-import Skill from './Skill';
+import { Box, Heading, Grid, GridItem, useBreakpointValue } from "@chakra-ui/react";
+import Skill from "./Skill";
 
-type SkillType = {
-  image: string;
-  name: string;
-  color: string;
-};
+export default function SkillList(props: any) {
+    const columns = useBreakpointValue({
+        sm: "repeat(2, 1fr)",
+        md: "repeat(3, 1fr)",
+        lg: "repeat(4, 1fr)",
+    });
 
-type SkillListProps = {
-  skills: SkillType[];
-  id: string;
-};
+    const gaps = useBreakpointValue({
+        sm: 6,
+        md: 8,
+        lg: 10,
+    });
 
-export default function SkillList({ skills, id }: SkillListProps) {
-  return (
-    <Box pt="30px">
-      <Heading size="2xl" pb="6" pt="15" pl="9" id={id}>
-        Skills
-      </Heading>
-      <Grid templateColumns="repeat(3, 1fr)" gap={5} pt="3" pl="9">
-        {skills.map((skill) => (
-          <GridItem key={skill.name}>
-            <Skill {...skill} />
-          </GridItem>
-        ))}
-      </Grid>
-    </Box>
-  );
+    const padding = useBreakpointValue({
+        sm: '4',
+        md: '6',
+        lg: '9',
+    });
+
+    return (
+        <Box pt='30px'>
+            <Heading 
+                size={['lg', 'xl', '2xl']} 
+                pb='6' 
+                pt='15' 
+                pl={padding} 
+                id='skills'
+            >
+                Skills
+            </Heading>
+            <Grid 
+                templateColumns={columns}
+                gap={gaps}
+                pt='3' 
+                pl={padding}
+            >
+                {props.skills.map((skill: any) => { 
+                    return (
+                        <GridItem key={skill.name}>
+                            <Skill {...skill} />
+                        </GridItem>
+                    )
+                })}
+            </Grid>
+        </Box>
+    )
 }
