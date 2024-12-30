@@ -1,26 +1,18 @@
 'use client';
 import React from 'react';
-import { Box, Flex } from '@chakra-ui/react';
-import ItemList from './components/ItemList';
+import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
+import List from './components/List';
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 import Menu from './components/Menu';
 import SkillList from './components/SkillList';
 import Head from 'next/head';
-import {
-  background,
-  header,
-  about,
-  contacts,
-  projects,
-  menuItems,
-  skills,
-  experience,
-  research,
-} from './configurations';
+import { background, header, about, contacts, projects, menuItems, skills, experience, research } from './configurations';
 
 export default function Home() {
+  const isDesktop = useBreakpointValue({ base: false, lg: true });
+  
   return (
     <>
       <Head>
@@ -44,8 +36,7 @@ export default function Home() {
         style={{
           minWidth: '100vw',
           height: '3320px',
-          background:
-            'linear-gradient(to bottom, rgba(18, 7, 89, 0.8), rgba(48, 6, 79, 0.8))',
+          background: 'linear-gradient(to bottom, rgba(18, 7, 89, 0.8), rgba(48, 6, 79, 0.8))',
           position: 'absolute',
           top: 0,
           left: 0,
@@ -53,36 +44,37 @@ export default function Home() {
         }}
       />
       <Flex
-        minW="100vw"
-        minH="100vh"
+        minW='100vw'
+        minH='100vh'
         color={'brand.text'}
-        position="relative"
-        direction="column"
+        position='relative'
+        direction='column'
       >
-        <Box
-          position="fixed"
-          p={8}
-          minH={'100vh'}
-          minW={'100vw'}
-          color="brand.text"
+        <Box 
+          position={isDesktop ? 'fixed' : 'relative'}
+          p={8} 
+          minH={isDesktop ? '100vh' : 'auto'}
+          w={isDesktop ? '40vw' : '100%'}
+          color='brand.text'
         >
           <Header {...header} />
           <Contact links={contacts} />
           <Menu menuItems={menuItems} />
         </Box>
-        <Box
-          position="absolute"
-          p={8}
-          left="40vw"
-          minH={'100vh'}
-          minW={'55vw'}
+        <Box 
+          position='relative'
+          p={[4, 8]}
+          left={isDesktop ? '40vw' : '0'}
+          minH={'100vh'} 
+          w={isDesktop ? '55vw' : '100%'}
           top={'0'}
+          mt={isDesktop ? '0' : '20px'}
         >
           <About {...about} />
-          <ItemList title="Projects" id="projects" projects={projects} />
-          <ItemList title="Experience" id="experience" projects={experience} />
-          <ItemList title="Research" id="research" projects={research} />
-          <SkillList skills={skills} id="skills" />
+          <List title="Projects" id="projects" projects={projects} />
+          <List title="Experience" id="experience" projects={experience} />
+          <List title="Research" id="research" projects={research} />
+          <SkillList skills={skills} id='skills' />
         </Box>
       </Flex>
     </>
