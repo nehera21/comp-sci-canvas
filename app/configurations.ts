@@ -1,5 +1,3 @@
-import { link } from 'fs';
-
 export const background = './images/wave.png';
 
 export const header = {
@@ -27,11 +25,27 @@ export const projects = [
     link: '',
     image: './images/hpt-img.png',
     tags: [
-      { name: 'Python', link: 'https://www.python.org/', isLink: true },
-      { name: 'TensorFlow', link: 'https://www.tensorflow.org/', isLink: true },
-      { name: 'Research', link: '', isLink: false },
-      { name: 'CNN Architecture', link: '', isLink: false },
+      {
+        name: 'Python',
+        link: 'https://www.python.org/',
+        isLink: true,
+        id: 'python',
+      },
+      {
+        name: 'TensorFlow',
+        link: 'https://www.tensorflow.org/',
+        isLink: true,
+        id: 'tensorflow',
+      },
+      { name: 'Research', link: '', isLink: false, id: 'research' },
+      {
+        name: 'CNN Architecture',
+        link: '',
+        isLink: false,
+        id: 'cnn-architecture',
+      },
     ],
+    id: 'homologus-point-transformer',
   },
   {
     title: 'Hierflow',
@@ -40,10 +54,26 @@ export const projects = [
     link: '',
     image: './images/hierflow-img.png',
     tags: [
-      { name: 'Python', link: 'https://www.python.org/', isLink: true },
-      { name: 'ReactJS', link: 'https://react.dev/', isLink: true },
-      { name: 'Large Language Models', link: '', isLink: false },
+      {
+        name: 'Python',
+        link: 'https://www.python.org/',
+        isLink: true,
+        id: 'python',
+      },
+      {
+        name: 'ReactJS',
+        link: 'https://react.dev/',
+        isLink: true,
+        id: 'reactjs',
+      },
+      {
+        name: 'Large Language Models',
+        link: '',
+        isLink: false,
+        id: 'large-language-models',
+      },
     ],
+    id: 'hierflow',
   },
   {
     title: 'Japanese Character Recognition',
@@ -52,10 +82,21 @@ export const projects = [
     link: '',
     image: './images/japanese-char-img.png',
     tags: [
-      { name: 'Python', link: 'https://www.python.org/', isLink: true },
-      { name: 'TensorFlow', link: 'https://www.tensorflow.org/', isLink: true },
-      { name: 'Numpy', link: 'https://numpy.org/', isLink: true },
+      {
+        name: 'Python',
+        link: 'https://www.python.org/',
+        isLink: true,
+        id: 'python',
+      },
+      {
+        name: 'TensorFlow',
+        link: 'https://www.tensorflow.org/',
+        isLink: true,
+        id: 'tensorflow',
+      },
+      { name: 'Numpy', link: 'https://numpy.org/', isLink: true, id: 'numpy' },
     ],
+    id: 'japanese-character-recognition',
   },
   {
     title: 'Memory Montor Web App',
@@ -64,14 +105,26 @@ export const projects = [
     link: '',
     image: './images/cognex-camera.png',
     tags: [
-      { name: 'AngularJS', link: 'https://angular.io/', isLink: true },
+      {
+        name: 'AngularJS',
+        link: 'https://angular.io/',
+        isLink: true,
+        id: 'angularjs',
+      },
       {
         name: 'TypeScript',
         link: 'https://www.typescriptlang.org/',
         isLink: true,
+        id: 'typescript',
       },
-      { name: 'Web Development', link: '', isLink: false },
+      {
+        name: 'Web Development',
+        link: '',
+        isLink: false,
+        id: 'web-development',
+      },
     ],
+    id: 'memory-monitor-web-app',
   },
 ];
 
@@ -83,17 +136,24 @@ export const experience = [
     link: 'https://www.cognex.com/',
     image: './images/cognex-logo.png',
     tags: [
-      { name: 'C#', link: '', isLink: false },
-      { name: '.NET', link: '', isLink: false },
-      { name: 'C', link: '', isLink: false },
-      { name: 'C++', link: '', isLink: false },
-      { name: 'AngularJS', link: 'https://angular.io/', isLink: true },
+      { name: 'C#', link: '', isLink: false, id: 'csharp' },
+      { name: '.NET', link: '', isLink: false, id: 'net' },
+      { name: 'C', link: '', isLink: false, id: 'c' },
+      { name: 'C++', link: '', isLink: false, id: 'cpp' },
+      {
+        name: 'AngularJS',
+        link: 'https://angular.io/',
+        isLink: true,
+        id: 'angularjs',
+      },
       {
         name: 'TypeScript',
         link: 'https://www.typescriptlang.org/',
         isLink: true,
+        id: 'typescript',
       },
     ],
+    id: 'cognex-software-engineering-intern',
   },
 ];
 
@@ -105,34 +165,50 @@ export const research = [
     link: '',
     image: './images/hpt-img.png',
     tags: [
-      { name: 'Python', link: 'https://www.python.org/', isLink: true },
-      { name: 'TensorFlow', link: 'https://www.tensorflow.org/', isLink: true },
-      { name: 'Research', link: '', isLink: false },
-      { name: 'CNN Architecture', link: '', isLink: false },
+      {
+        name: 'Python',
+        link: 'https://www.python.org/',
+        isLink: true,
+        id: 'python',
+      },
+      {
+        name: 'TensorFlow',
+        link: 'https://www.tensorflow.org/',
+        isLink: true,
+        id: 'tensorflow',
+      },
+      { name: 'Research', link: '', isLink: false, id: 'research' },
+      {
+        name: 'CNN Architecture',
+        link: '',
+        isLink: false,
+        id: 'cnn-architecture',
+      },
     ],
+    id: 'mind-over-gray-matter',
   },
 ];
 
 export const menuItems = [
   {
     name: 'About',
-    jumpID: 'about',
+    id: 'about',
   },
   {
     name: 'Projects',
-    jumpID: 'projects',
+    id: 'projects',
   },
   {
     name: 'Experience',
-    jumpID: 'experience',
+    id: 'experience',
   },
   {
     name: 'Research',
-    jumpID: 'research',
+    id: 'research',
   },
   {
     name: 'Skills',
-    jumpID: 'skills',
+    id: 'skills',
   },
 ];
 
@@ -141,80 +217,96 @@ export const skills = [
     image: './images/javascript-logo.png',
     name: 'JavaScript',
     color: '#F7DF1E',
+    id: 'javascript',
   },
   {
     image: './images/typescript-logo.png',
     name: 'TypeScript',
     color: '#007ACC',
+    id: 'typescript',
   },
   {
     image: './images/react-logo.png',
     name: 'ReactJS',
     color: '#61DAFB',
+    id: 'reactjs',
   },
   {
     image: './images/angular-logo.png',
     name: 'AngularJS',
     color: '#DD0031',
+    id: 'angularjs',
   },
   {
     image: './images/node-logo.png',
     name: 'NodeJS',
     color: '#339933',
+    id: 'nodejs',
   },
   {
     image: './images/java-logo.png',
     name: 'Java',
     color: '#E04C26',
+    id: 'java',
   },
   {
     image: './images/c-logo.png',
     name: 'C',
     color: '#55479C',
+    id: 'c',
   },
   {
     image: './images/cpp-logo.png',
     name: 'C++',
     color: '#00599C',
+    id: 'cpp',
   },
   {
     image: './images/c-sharp-logo.png',
     name: 'C#',
     color: '#3e0f5a',
+    id: 'csharp',
   },
   {
     image: './images/python-logo.png',
     name: 'Python',
     color: '#3776AB',
+    id: 'python',
   },
   {
     image: './images/r-logo.png',
     name: 'R',
     color: '#276DC3',
+    id: 'r',
   },
   {
     image: './images/pandas-logo.png',
     name: 'Pandas',
     color: '#150458',
+    id: 'pandas',
   },
   {
     image: './images/numpy-logo.png',
     name: 'NumPy',
     color: '#4D77CF',
+    id: 'numpy',
   },
   {
     image: './images/pytorch-logo.png',
     name: 'PyTorch',
     color: '#FF4F00',
+    id: 'pytorch',
   },
   {
     image: './images/tensorflow-logo.png',
     name: 'TensorFlow',
     color: '#FF6F00',
+    id: 'tensorflow',
   },
   {
     image: './images/git-logo.png',
     name: 'Git',
     color: '#F05032',
+    id: 'git',
   },
 ];
