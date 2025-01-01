@@ -1,23 +1,18 @@
-import React from 'react';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { SocialIcon } from 'react-social-icons';
 import { AnimatedBox } from './AnimatedBox';
 
 export type ContactProps = {
-  links: string[];
+  link: string;
+  id: string;
+  color: string;
 };
-export default function Contact(props: ContactProps) {
+export default function Contact({ link, color }: ContactProps) {
   return (
-    <Flex pl="5">
-      {props.links.map((link) => {
-        return (
-          <Box key={link} mr="15px">
-            <AnimatedBox whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.98 }}>
-              <SocialIcon url={link} />
-            </AnimatedBox>
-          </Box>
-        );
-      })}
-    </Flex>
+    <Box key={link} mr="15px">
+      <AnimatedBox whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.98 }}>
+        <SocialIcon url={link} bgColor={color} />
+      </AnimatedBox>
+    </Box>
   );
 }

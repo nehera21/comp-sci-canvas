@@ -13,10 +13,10 @@ export default function Header(props: HeaderProps) {
       <Heading pt="10px" fontFamily="mono" size={'2xl'}>
         {title}
       </Heading>
-      <Heading fontFamily="mono" size="sm">
+      <Heading fontFamily="mono" size="sm" pr="10px">
         {subtitle}
       </Heading>
-      <Heading pt="20px" fontFamily="mono" size="md">
+      <Heading pt="20px" fontFamily="mono" size="md" pr="20px">
         {intro}
       </Heading>
     </Stack>

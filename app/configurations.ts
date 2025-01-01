@@ -12,9 +12,21 @@ export const about = {
 };
 
 export const contacts = [
-  'https://www.linkedin.com/in/alex-j-neher/',
-  'https://github.com/nehera21',
-  'mailto: ajneher21@gmail.com',
+  {
+    link: 'https://www.linkedin.com/in/alex-j-neher/',
+    id: 'linkedin',
+    color: '#0077B5',
+  },
+  {
+    link: 'https://github.com/nehera21',
+    id: 'github',
+    color: '#6B7280',
+  },
+  {
+    link: 'mailto: ajneher21@gmail.com',
+    id: 'email',
+    color: '#F6B75D',
+  },
 ];
 
 export const projects = [
@@ -264,7 +276,7 @@ export const skills = [
   {
     image: './images/c-sharp-logo.png',
     name: 'C#',
-    color: '#3e0f5a',
+    color: '#ffffff',
     id: 'csharp',
   },
   {

@@ -9,7 +9,7 @@ export type AboutProps = {
 export default function About(props: AboutProps) {
   const { text } = props;
   return (
-    <Box id="about" w="100%" maxW="800px" mx="auto">
+    <Box id="about" pr="3" w="100%" maxW="800px" mx="auto">
       <Text
         fontSize={['16px', '18px']}
         fontFamily="mono"

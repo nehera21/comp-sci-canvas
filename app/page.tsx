@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
-import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Flex, useBreakpointValue, HStack } from '@chakra-ui/react';
 import List from './components/List';
 import Header from './components/Header';
 import About from './components/About';
-import Contact from './components/Contact';
+import Contacts from './components/ContactList';
 import Menu from './components/Menu';
 import SkillList from './components/SkillList';
 import Head from 'next/head';
@@ -30,27 +30,28 @@ export default function Home() {
       </Head>
       <div
         style={{
-          minWidth: '100vw',
-          minHeight: '100vh',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
           background: `url(${background})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'fixed',
-          position: 'fixed',
-          top: 0,
-          left: 0,
           zIndex: -2,
         }}
       />
       <Box
         style={{
-          minWidth: '100vw',
-          height: '3320px',
-          background:
-            'linear-gradient(to bottom, rgba(18, 7, 89, 0.8), rgba(48, 6, 79, 0.8))',
           position: 'absolute',
           top: 0,
           left: 0,
+          width: '100%',
+          height: '100%',
+          minHeight: '100vh',
+          background:
+            'linear-gradient(to bottom, rgba(10, 4, 50, 0.9), rgba(35, 4, 58, 0.9))',
           zIndex: -1,
         }}
       />
@@ -69,7 +70,7 @@ export default function Home() {
           color="brand.text"
         >
           <Header {...header} />
-          <Contact links={contacts} />
+          <Contacts contacts={contacts} />
           <Menu menuItems={menuItems} />
         </Box>
         <Box

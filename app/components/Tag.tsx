@@ -16,6 +16,7 @@ export default function Tag(props: TagProps) {
       borderRadius={'15px'}
       pl="2"
       pr="2"
+      mt="2"
       mr="2"
       whileHover={{ backgroundColor: '#FFEC96' }}
       whileTap={{ backgroundColor: '#FFFFE0', scale: 0.98 }}

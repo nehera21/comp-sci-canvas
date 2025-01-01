@@ -9,7 +9,7 @@ export type ListProps = {
 };
 export default function List(props: ListProps) {
   return (
-    <Box pl={['2', '4', '6']} pt="10" w="100%" maxW="800px" mx="auto">
+    <Box pl={['2', '4', '6']} pt="10" pr="10" w="100%" maxW="800px" mx="auto">
       <Heading size={['xl', '2xl']} pl={['2', '3']} pb="8" pt="5" id={props.id}>
         {props.title}
       </Heading>
