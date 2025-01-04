@@ -1,32 +1,38 @@
 import React from 'react';
-import { Box, Button } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { Box, Button, Text } from '@chakra-ui/react';
 
 export type MenuItemProps = {
   name: string;
   id: string;
 };
-export default function MenuItem(props: MenuItemProps) {
-  const { name, id } = props;
-  const router = useRouter();
+
+export default function MenuItem({ name, id }: MenuItemProps) {
+  const handleClick = () => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <Box fontSize={'2xl'} mt="8">
       <Button
-        as={motion.button}
-        onClick={() => router.push(`#${id}`)}
+        onClick={handleClick}
         fontFamily="mono"
         bgColor="transparent"
         color="brand.accent"
         border="1px"
         borderColor="brand.accent"
         width="100px"
-        whileHover={{
+        _hover={{
           backgroundColor: '#F6B75D',
           color: '#30064f',
           width: '200px',
+          transition: 'all 0.3s ease',
         }}
-        whileTap={{ scale: 0.95 }}
       >
         {name}
       </Button>

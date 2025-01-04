@@ -280,6 +280,12 @@ export const skills = [
     id: 'csharp',
   },
   {
+    image: './images/net-logo.png',
+    name: '.NET',
+    color: '#0386C9',
+    id: 'net',
+  },
+  {
     image: './images/python-logo.png',
     name: 'Python',
     color: '#3776AB',
@@ -314,6 +320,24 @@ export const skills = [
     name: 'TensorFlow',
     color: '#FF6F00',
     id: 'tensorflow',
+  },
+  {
+    image: './images/sql-logo.png',
+    name: 'SQL',
+    color: '#00BCF2',
+    id: 'sql',
+  },
+  {
+    image: './images/mysql-logo.png',
+    name: 'MySQL',
+    color: '#00758F',
+    id: 'mysql',
+  },
+  {
+    image: './images/mongodb-logo.png',
+    name: 'MongoDB',
+    color: '#4DB33D',
+    id: 'mongodb',
   },
   {
     image: './images/git-logo.png',
