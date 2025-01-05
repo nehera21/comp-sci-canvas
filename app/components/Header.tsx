@@ -14,8 +14,8 @@ export default function Header(props: HeaderProps) {
   }, []);
 
   return (
-    <Stack pl="6" pb="10" textAlign={'left'}>
-      <Heading pt="10px" fontFamily="mono" size={'2xl'}>
+    <Stack pl="6" textAlign={'left'}>
+      <Heading pt="5px" pb="5px" fontFamily="mono" size={'2xl'}>
         {title}
       </Heading>
       <TypeAnimation

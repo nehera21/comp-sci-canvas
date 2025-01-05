@@ -9,10 +9,11 @@ export type AboutProps = {
 export default function About(props: AboutProps) {
   const { text } = props;
   return (
-    <Box id="about" pr="3" w="100%" maxW="800px" mx="auto">
+    <Box id="about" pr="2" w="100%" maxW="800px" mx="auto">
       <Text
         fontSize={['16px', '17px', '18px']}
-        p={['15px', '15px 35px']}
+        pl="12px"
+        pr="3px"
         textAlign="justify"
         fontWeight="bold"
         color="white"

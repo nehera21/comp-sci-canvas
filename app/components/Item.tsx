@@ -17,7 +17,7 @@ export default function Item(props: ItemProps) {
   const { title, description, link, image, tags } = props;
 
   return (
-    <Box pl={['2', '3']} pb="5">
+    <Box pl={['2', '3']} pr={['2', '3']} pb="5">
       <AnimatedBox
         as={motion.div}
         p={['2', '3']}

@@ -19,17 +19,51 @@ export const contacts = [
   {
     link: 'https://www.linkedin.com/in/alex-j-neher/',
     id: 'linkedin',
-    color: '#0077B5',
+    bgcolor: '#0077B5',
+    fgcolor: '#FFFFFF',
   },
   {
     link: 'https://github.com/nehera21',
     id: 'github',
-    color: '#6B7280',
+    bgcolor: '#181717',
+    fgcolor: '#FFFFFF',
+  },
+  {
+    link: 'https://www.instagram.com/alex_neher/?next=%2F&hl=en',
+    id: 'instagram',
+    bgcolor: '#E1306C',
+    fgcolor: '#FFFFFF',
+  },
+  {
+    link: 'https://www.facebook.com/alexander.neher.3114',
+    id: 'facebook',
+    bgcolor: '#1877F2',
+    fgcolor: '#FFFFFF',
   },
   {
     link: 'mailto: ajneher21@gmail.com',
     id: 'email',
-    color: '#F6B75D',
+    bgcolor: '#F6B75D',
+    fgcolor: '#000000',
+  },
+];
+
+export const menuItems = [
+  {
+    name: 'Projects',
+    id: 'projects',
+  },
+  {
+    name: 'Experience',
+    id: 'experience',
+  },
+  {
+    name: 'Research',
+    id: 'research',
+  },
+  {
+    name: 'Skills',
+    id: 'skills',
   },
 ];
 
@@ -202,29 +236,6 @@ export const research = [
       },
     ],
     id: 'mind-over-gray-matter',
-  },
-];
-
-export const menuItems = [
-  {
-    name: 'About',
-    id: 'about',
-  },
-  {
-    name: 'Projects',
-    id: 'projects',
-  },
-  {
-    name: 'Experience',
-    id: 'experience',
-  },
-  {
-    name: 'Research',
-    id: 'research',
-  },
-  {
-    name: 'Skills',
-    id: 'skills',
   },
 ];
 

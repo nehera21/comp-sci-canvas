@@ -18,7 +18,7 @@ export default function MenuItem({ name, id }: MenuItemProps) {
   };
 
   return (
-    <Box fontSize={'2xl'}>
+    <Box>
       <Button
         onClick={handleClick}
         fontFamily="mono"
@@ -26,6 +26,8 @@ export default function MenuItem({ name, id }: MenuItemProps) {
         color="brand.accent"
         border="1px"
         borderColor="brand.accent"
+        size="sm"
+        fontSize="md"
         _hover={{
           backgroundColor: '#F6B75D',
           color: '#30064f',

@@ -22,27 +22,21 @@ export default function SkillList(props: SkillListProps) {
   const gaps = useBreakpointValue({
     sm: 6,
     md: 8,
-    lg: 10,
+    lg: 8,
   });
 
   const padding = useBreakpointValue({
-    sm: '4',
-    md: '6',
-    lg: '9',
+    sm: '6',
+    md: '8',
+    lg: '10',
   });
 
   return (
-    <Box pt="30px">
-      <Heading
-        size={['lg', 'xl', '2xl']}
-        pb="6"
-        pt="15"
-        pl={padding}
-        id="skills"
-      >
+    <Box pt="45px">
+      <Heading size={['lg', 'xl', '2xl']} pb="6" pl={padding} id="skills">
         Skills
       </Heading>
-      <Grid templateColumns={columns} gap={gaps} pt="3" pl={padding}>
+      <Grid templateColumns={columns} gap={gaps} pt="3" pl={padding} pr="2">
         {props.skills.map((skill: SkillProps) => {
           return (
             <GridItem key={skill.name}>

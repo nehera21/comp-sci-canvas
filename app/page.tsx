@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Box, Flex, useBreakpointValue, HStack } from '@chakra-ui/react';
+import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
 import List from './components/List';
 import Header from './components/Header';
 import About from './components/About';
@@ -71,16 +71,16 @@ export default function Home() {
           color="brand.text"
         >
           <Header {...header} />
-          <Contacts contacts={contacts} />
           <Images />
+          <Contacts contacts={contacts} />
           <Menu menuItems={menuItems} />
         </Box>
         <Box
           position="relative"
-          p={[4, 8]}
+          p={[4, 8, 0, 8]}
           left={isDesktop ? '40vw' : '0'}
           minH={'100vh'}
-          w={isDesktop ? '55vw' : '100%'}
+          w={isDesktop ? '60vw' : '100%'}
           top={'0'}
           mt={isDesktop ? '0' : '20px'}
         >
