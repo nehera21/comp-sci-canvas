@@ -7,7 +7,13 @@ import { Box } from '@chakra-ui/react';
 export default function Images() {
   return (
     <Box w="430px" h="430px" pt="5" pl="5" pr="5">
-      <Carousel showThumbs={false} showStatus={false} infiniteLoop>
+      <Carousel
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop
+        autoPlay
+        interval={6000}
+      >
         {images.map((image) => (
           <img src={image} alt="image" key={image} />
         ))}

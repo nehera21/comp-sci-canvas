@@ -19,7 +19,6 @@ import {
   skills,
   experience,
   research,
-  images,
 } from './configurations';
 
 export default function Home() {
