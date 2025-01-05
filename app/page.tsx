@@ -7,6 +7,7 @@ import About from './components/About';
 import Contacts from './components/ContactList';
 import Menu from './components/Menu';
 import SkillList from './components/SkillList';
+import Images from './components/Images';
 import Head from 'next/head';
 import {
   background,
@@ -18,6 +19,7 @@ import {
   skills,
   experience,
   research,
+  images,
 } from './configurations';
 
 export default function Home() {
@@ -71,6 +73,7 @@ export default function Home() {
         >
           <Header {...header} />
           <Contacts contacts={contacts} />
+          <Images />
           <Menu menuItems={menuItems} />
         </Box>
         <Box

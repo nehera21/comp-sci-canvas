@@ -2,14 +2,18 @@ export const background = './images/wave.png';
 
 export const header = {
   title: 'Alexander Neher',
-  subtitle: 'Software Engineering, Data Science, and Machine Learning',
-  intro:
-    'I am a Computer Science student at the Milwaukee School of Engineering',
+  subtitle: ['Software Engineering', 'Data Science', 'Machine Learning'],
 };
 
 export const about = {
   text: 'I am a senior at the Milwaukee School of Engineering, pursuing a B.S. in Computer Science with a minor in Mathematics, and a M.S. in Machine Learning. With experience across a range of programming languages and technologies, I am continually seeking opportunities to expand my knowledge. I am currently looking for a full-time position in software engineering or data science, driven by a passion for applying machine learning to solve real-world challenges, particularly in the medical field. I also have a strong interest in web development, with expertise in both front-end and back-end technologies.',
 };
+
+export const images = [
+  './images/hpt-img.png',
+  './images/hpt-img.png',
+  './images/hpt-img.png',
+];
 
 export const contacts = [
   {

@@ -11,10 +11,12 @@ export default function About(props: AboutProps) {
   return (
     <Box id="about" pr="3" w="100%" maxW="800px" mx="auto">
       <Text
-        fontSize={['16px', '18px']}
-        fontFamily="mono"
+        fontSize={['16px', '17px', '18px']}
         p={['15px', '15px 35px']}
         textAlign="justify"
+        fontWeight="bold"
+        color="white"
+        lineHeight={1.8}
       >
         {text}
       </Text>

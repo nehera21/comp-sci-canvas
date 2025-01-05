@@ -1,16 +1,18 @@
 import React from 'react';
+import { HStack } from '@chakra-ui/react';
 import MenuItem, { MenuItemProps } from './MenuItem';
-import { Box } from '@chakra-ui/react';
 
 export type MenuProps = {
   menuItems: MenuItemProps[];
 };
+
 export default function Menu(props: MenuProps) {
+  const { menuItems } = props;
   return (
-    <Box pl="6" width="600px" justifyContent="right">
-      {props.menuItems.map((item: MenuItemProps) => (
-        <MenuItem {...item} key={item.id} />
+    <HStack spacing={2} ml={5} flexWrap="wrap">
+      {menuItems.map((item) => (
+        <MenuItem key={item.id} {...item} />
       ))}
-    </Box>
+    </HStack>
   );
 }

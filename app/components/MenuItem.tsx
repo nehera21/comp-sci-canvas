@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Box, Button } from '@chakra-ui/react';
 
 export type MenuItemProps = {
   name: string;
@@ -18,7 +18,7 @@ export default function MenuItem({ name, id }: MenuItemProps) {
   };
 
   return (
-    <Box fontSize={'2xl'} mt="8">
+    <Box fontSize={'2xl'}>
       <Button
         onClick={handleClick}
         fontFamily="mono"
@@ -26,11 +26,10 @@ export default function MenuItem({ name, id }: MenuItemProps) {
         color="brand.accent"
         border="1px"
         borderColor="brand.accent"
-        width="100px"
         _hover={{
           backgroundColor: '#F6B75D',
           color: '#30064f',
-          width: '200px',
+          transform: 'scale(1.05)',
           transition: 'all 0.3s ease',
         }}
       >
