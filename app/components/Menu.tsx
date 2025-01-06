@@ -9,7 +9,7 @@ export type MenuProps = {
 export default function Menu(props: MenuProps) {
   const { menuItems } = props;
   return (
-    <HStack spacing={2} ml={2} pt="75px" w="450px" flexWrap="wrap">
+    <HStack spacing={2} ml={3} pt="75px" w="450px" flexWrap="wrap">
       {menuItems.map((item) => (
         <MenuItem key={item.id} {...item} />
       ))}

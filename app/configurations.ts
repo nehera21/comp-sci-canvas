@@ -69,11 +69,57 @@ export const menuItems = [
 
 export const projects = [
   {
+    title: 'Discovery Mate',
+    description:
+      'Full stack applicaion that takes in user settings and uses embeddings to make personalized Discovery World exhibit recomendations, while also using a real-time AI voice assistant for teaching that is capabale of switching between multiple languages.',
+    link: '',
+    image: './images/ai-voice.png',
+    tags: [
+      {
+        name: 'ReactJS',
+        link: 'https://react.dev/',
+        isLink: true,
+        id: 'reactjs',
+      },
+      {
+        name: 'Python',
+        link: 'https://www.python.org/',
+        isLink: true,
+        id: 'python',
+      },
+      {
+        name: 'SQL',
+        link: '',
+        isLink: false,
+        id: 'sql',
+      },
+      {
+        name: 'Embedding',
+        link: '',
+        isLink: false,
+        id: 'embedding',
+      },
+      {
+        name: 'RAG',
+        link: '',
+        isLink: false,
+        id: 'rag',
+      },
+      {
+        name: 'LLMs',
+        link: '',
+        isLink: false,
+        id: 'llms',
+      },
+    ],
+    id: 'discovery-mate',
+  },
+  {
     title: 'Homologus Point Transformer',
     description:
       'A program the takes in dataset of two modalities of medical images (made for histology and MRI images) and uses a convolutional neural network to register the one modality to the other.',
     link: '',
-    image: './images/hpt-img.png',
+    image: './images/hist-slice.png',
     tags: [
       {
         name: 'Python',
@@ -153,7 +199,7 @@ export const projects = [
     description:
       'An internal app at Cognex that allows a worker to monitor the heap memory usage of a camera overtime using a web interface and network requests using socket calls.',
     link: '',
-    image: './images/cognex-camera.png',
+    image: './images/cognex-camera.jpg',
     tags: [
       {
         name: 'AngularJS',
