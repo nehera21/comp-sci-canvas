@@ -6,13 +6,13 @@ export const header = {
 };
 
 export const about = {
-  text: 'I am a senior at the Milwaukee School of Engineering, pursuing a B.S. in Computer Science with a minor in Mathematics, and a M.S. in Machine Learning. With experience across a range of programming languages and technologies, I am continually seeking opportunities to expand my knowledge. I am currently looking for a full-time position in software engineering or data science, driven by a passion for applying machine learning to solve real-world challenges, particularly in the medical field. I also have a strong interest in web development, with expertise in both front-end and back-end technologies.',
+  text: 'Hello! I am a senior at the Milwaukee School of Engineering, pursuing a B.S. in Computer Science with a minor in Mathematics, and a M.S. in Machine Learning. With experience across a range of programming languages and technologies, I am continually seeking opportunities to expand my knowledge. I am currently looking for a full-time position in software engineering or data science, driven by a passion for applying machine learning to solve real-world challenges, particularly in the medical field. I also have a strong interest in web development, with expertise in both front-end and back-end technologies.',
 };
 
 export const images = [
-  './images/hpt-img.png',
-  './images/hpt-img.png',
-  './images/hpt-img.png',
+  './images/profile-pic.jfif',
+  './images/rosie-competition-team.png',
+  './images/friends.jpeg',
 ];
 
 export const contacts = [
@@ -76,6 +76,12 @@ export const projects = [
     image: './images/ai-voice.png',
     tags: [
       {
+        name: 'TypeScript',
+        link: 'https://www.typescriptlang.org/',
+        isLink: true,
+        id: 'typescript',
+      },
+      {
         name: 'ReactJS',
         link: 'https://react.dev/',
         isLink: true,
@@ -94,10 +100,10 @@ export const projects = [
         id: 'sql',
       },
       {
-        name: 'Embedding',
+        name: 'Embeddings',
         link: '',
         isLink: false,
-        id: 'embedding',
+        id: 'embeddings',
       },
       {
         name: 'RAG',
@@ -117,7 +123,7 @@ export const projects = [
   {
     title: 'Homologus Point Transformer',
     description:
-      'A program the takes in dataset of two modalities of medical images (made for histology and MRI images) and uses a convolutional neural network to register the one modality to the other.',
+      'A data pipeline which takes in dataset of two modalities of medical images (made for histology and MRI images) and uses a convolutional neural network to register the one modality to the other.',
     link: '',
     image: './images/hist-slice.png',
     tags: [
@@ -140,13 +146,25 @@ export const projects = [
         isLink: false,
         id: 'cnn-architecture',
       },
+      {
+        name: 'Medical Imaging',
+        link: '',
+        isLink: false,
+        id: 'medical-imaging',
+      },
+      {
+        name: 'Transformers',
+        link: '',
+        isLink: false,
+        id: 'transformers',
+      },
     ],
     id: 'homologus-point-transformer',
   },
   {
     title: 'Hierflow',
     description:
-      'A program that uses a large language model to create a hierarchy of a particular topic, as well as classify an item within an existing hierarchy. The pipeline utilizes embeddings, RAG, and prompt engineering.',
+      'A full stack application that uses a large language model to create a hierarchy of a particular topic, as well as classify an item within an existing hierarchy. The pipeline utilizes embeddings, RAG, and prompt engineering.',
     link: '',
     image: './images/hierflow-img.png',
     tags: [
@@ -157,16 +175,40 @@ export const projects = [
         id: 'python',
       },
       {
+        name: 'TypeScript',
+        link: 'https://www.typescriptlang.org/',
+        isLink: true,
+        id: 'typescript',
+      },
+      {
         name: 'ReactJS',
         link: 'https://react.dev/',
         isLink: true,
         id: 'reactjs',
       },
       {
-        name: 'Large Language Models',
+        name: 'LLMs',
         link: '',
         isLink: false,
-        id: 'large-language-models',
+        id: 'llms',
+      },
+      {
+        name: 'RAG',
+        link: '',
+        isLink: false,
+        id: 'rag',
+      },
+      {
+        name: 'Embeddings',
+        link: '',
+        isLink: false,
+        id: 'embeddings',
+      },
+      {
+        name: 'Prompt Engineering',
+        link: '',
+        isLink: false,
+        id: 'prompt-engineering',
       },
     ],
     id: 'hierflow',
@@ -197,7 +239,7 @@ export const projects = [
   {
     title: 'Memory Montor Web App',
     description:
-      'An internal app at Cognex that allows a worker to monitor the heap memory usage of a camera overtime using a web interface and network requests using socket calls.',
+      'An internal application at Cognex that allows a worker to monitor the heap memory usage of a camera overtime using a web interface and network requests via socket connections.',
     link: '',
     image: './images/cognex-camera.jpg',
     tags: [
@@ -212,6 +254,12 @@ export const projects = [
         link: 'https://www.typescriptlang.org/',
         isLink: true,
         id: 'typescript',
+      },
+      {
+        name: 'APIs',
+        link: '',
+        isLink: false,
+        id: 'apis',
       },
       {
         name: 'Web Development',
@@ -279,6 +327,18 @@ export const research = [
         link: '',
         isLink: false,
         id: 'cnn-architecture',
+      },
+      {
+        name: 'Transformers',
+        link: '',
+        isLink: false,
+        id: 'transformers',
+      },
+      {
+        name: 'Medical Imaging',
+        link: '',
+        isLink: false,
+        id: 'medical-imaging',
       },
     ],
     id: 'mind-over-gray-matter',

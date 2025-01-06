@@ -13,9 +13,12 @@ export default function Images() {
         infiniteLoop
         autoPlay
         interval={6000}
+        swipeable
       >
         {images.map((image) => (
-          <img src={image} alt="image" key={image} />
+          <Box borderRadius="15px" overflowY="hidden" key={image}>
+            <img src={image} alt="image" />
+          </Box>
         ))}
       </Carousel>
     </Box>

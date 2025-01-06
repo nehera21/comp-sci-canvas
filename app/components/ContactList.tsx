@@ -7,7 +7,7 @@ export type ContactListProps = {
 };
 export default function ContactList(props: ContactListProps) {
   return (
-    <HStack ml="45px" mt="-15px">
+    <HStack ml="45px">
       {props.contacts.map((contact) => (
         <Contact key={contact.id} {...contact} />
       ))}
