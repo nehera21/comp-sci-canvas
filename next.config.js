@@ -21,4 +21,5 @@ module.exports = {
     loader: 'imgix',
     path: 'msoe-367267903.imgix.net',
   },
+  transpilePackages: ['react-responsive-carousel'],
 };
