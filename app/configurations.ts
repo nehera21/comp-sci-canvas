@@ -13,7 +13,6 @@ export const images = [
   './images/profile-pic.jfif',
   './images/rosie-competition-team.png',
   './images/friends.jpeg',
-  './images/cognex-logo.png',
 ];
 
 export const contacts = [
