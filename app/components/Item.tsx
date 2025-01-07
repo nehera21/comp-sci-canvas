@@ -59,12 +59,14 @@ export default function Item(props: ItemProps) {
         display="flex"
         alignItems="center"
         justifyContent="center"
+        pr="20px"
       >
         <Box
           position="relative"
           width="100%"
           paddingBottom="100%"
           overflow="hidden"
+          borderRadius="10px"
         >
           <img
             src={image}
@@ -77,6 +79,7 @@ export default function Item(props: ItemProps) {
               height: '100%',
               objectFit: 'cover',
               objectPosition: 'center',
+              borderRadius: '10px',
             }}
           />
         </Box>
